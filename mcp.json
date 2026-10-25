@@ -1,0 +1,55 @@
+{
+  "name": "catholic-nuns-ai-mcp",
+  "version": "1.0.0",
+  "description": "Catholic Nuns AI Model Context Protocol Server for Autonomous Contemplative Charity, Monastic Healthcare, Sacred Servanthood & Unconditional Corporal Mercy Protocol",
+  "tools": [
+    {
+      "name": "audit_corporal_mercy_readiness",
+      "description": "Evaluate community medical, nutritional, and palliative needs against available convent hospital beds and hospice supplies to triage immediate relief",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "community_region": {
+            "type": "string"
+          },
+          "urgent_need_category": {
+            "type": "string"
+          },
+          "available_sanctuary_beds": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "community_region",
+          "urgent_need_category"
+        ]
+      }
+    },
+    {
+      "name": "disburse_monastic_mercy_grant",
+      "description": "Trigger automated micro-escrow disbursements for hospice medications, orphanage nutritional supplies, mobile health vans, and convent disaster relief",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "recipient": {
+            "type": "string"
+          },
+          "amount_wei": {
+            "type": "string"
+          },
+          "proof_hash": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "recipient",
+          "amount_wei"
+        ]
+      }
+    }
+  ]
+}
